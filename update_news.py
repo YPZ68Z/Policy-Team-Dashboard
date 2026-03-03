@@ -28,15 +28,15 @@ def fetch_news():
     return "\n".join(articles)
 
 def generate_war_room_briefing(raw_news):
-    # 2. 升級 AI 戰略指令：強制配額 20+5
+    # 2. 升級 AI 戰略指令：強制配額 12+4
     prompt = f"""
     You are the Chief Intelligence Officer for Meta's APAC Public Policy team.
-    Review the following raw news items. You must select exactly 25 items based on the following strict allocation:
+    Review the following raw news items. You must select exactly 16 items based on the following strict allocation:
     
-    Category A (20 items): Global Geopolitics & Meta APAC Policy Team must-knows (Tech regulation, AI, cross-strait tensions).
-    Category B (5 items): Exclusively focused on Australia (e.g., Australian federal politics, eSafety regulation, News Media Bargaining Code, and ANZ regional dynamics).
+    Category A (12 items): Global Geopolitics & Meta APAC Policy Team must-knows (Tech regulation, AI, cross-strait tensions).
+    Category B (4 items): Exclusively focused on Australia (e.g., Australian commonwealth politics, eSafety regulation, News Media Bargaining Code, and ANZ regional dynamics).
     
-    For each of the 25 items, write a sharp, executive-level summary of exactly 100 words in Traditional Chinese (繁體中文). 
+    For each of the 16 items, write a sharp, executive-level summary of exactly 100 words in Traditional Chinese (繁體中文) and then write a sharp, executive-level summary of exactly 50 words in English. 
     Focus on the "Impact on Tech/Meta" and "Strategic Geopolitical value".
     
     Output the result in strict, clean HTML format. 
